@@ -1,4 +1,4 @@
-name: 8.0 PHP-CLI
+name: 8.0 cli
 
 on:
   push:
