@@ -1,4 +1,4 @@
-FROM php:8.0.8-fpm-alpine3.14 as base
+FROM php:8.0.10-fpm-alpine3.14 as base
 
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/community/ gnu-libiconv=1.15-r3
 
