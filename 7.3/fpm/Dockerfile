@@ -1,4 +1,4 @@
-FROM php:7.3.30-fpm-alpine3.13 as base
+FROM php:7.3.31-fpm-alpine3.13 as base
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-extensions \
