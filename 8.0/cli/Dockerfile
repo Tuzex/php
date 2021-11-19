@@ -1,6 +1,6 @@
 FROM php:8.0.12-cli-alpine3.14 as base
 
-RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/community/ gnu-libiconv=1.15-r3
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/community/ gnu-libiconv=1.16-r0
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-extensions \
