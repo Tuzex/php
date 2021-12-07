@@ -7,6 +7,8 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
     && sync \
     && install-php-extensions \
          gd \
+         iconv \
+         mbstring \
          intl \
          mongodb \
          mysqli \
