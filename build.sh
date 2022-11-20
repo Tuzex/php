@@ -67,7 +67,7 @@ if [ "$ENV" = "dev" ]; then
 fi
 
 CONTEXT="./$VERSION/$MODE"
-REPO="codeasoft/php"
+REPO="tuzex/php"
 TAG="$VERSION-$MODE$FLAG"
 
 DOCKER_BUILDKIT=1 docker build --target "$ENV" -t "$REPO":"$TAG" "$CONTEXT"

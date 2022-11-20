@@ -42,8 +42,8 @@ jobs:
           context: ./${{ env.VERSION }}/${{ env.MODE }}/
           push: true
           tags: |
-            codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}
-            ghcr.io/codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}
+            tuzex/php:${{ env.VERSION }}-${{ env.MODE }}
+            ghcr.io/tuzex/php:${{ env.VERSION }}-${{ env.MODE }}
           target: ${{ env.ENVIRONMENT }}
 
   cli--dev:
@@ -79,8 +79,8 @@ jobs:
           context: ./${{ env.VERSION }}/${{ env.MODE }}/
           push: true
           tags: |
-            codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
-            ghcr.io/codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
+            tuzex/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
+            ghcr.io/tuzex/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
           target: ${{ env.ENVIRONMENT }}
   fpm:
     runs-on: ubuntu-latest
@@ -110,8 +110,8 @@ jobs:
           context: ./${{ env.VERSION }}/${{ env.MODE }}/
           push: true
           tags: |
-            codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}
-            ghcr.io/codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}
+            tuzex/php:${{ env.VERSION }}-${{ env.MODE }}
+            ghcr.io/tuzex/php:${{ env.VERSION }}-${{ env.MODE }}
           target: ${{ env.ENVIRONMENT }}
 
   fpm--dev:
@@ -142,7 +142,7 @@ jobs:
           context: ./${{ env.VERSION }}/${{ env.MODE }}/
           push: true
           tags: |
-            codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
-            ghcr.io/codeasoft/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
+            tuzex/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
+            ghcr.io/tuzex/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
           target: ${{ env.ENVIRONMENT }}
 
