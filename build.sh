@@ -24,7 +24,7 @@ do
 done
 
 PS3='Choose a version: '
-OPTIONS=("7.3" "7.4" "8.0")
+OPTIONS=("7.3" "7.4" "8.0" "8.1" "8.2")
 
 echo "Which PHP version do you want to use?"
 select OPT in "${OPTIONS[@]}";
