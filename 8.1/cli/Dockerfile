@@ -1,4 +1,4 @@
-FROM php:8.1.12-alpine3.16 as base
+FROM php:8.1.13-cli-alpine3.16 as base
 
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/community/ gnu-libiconv=1.16-r0
 
