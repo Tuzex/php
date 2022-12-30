@@ -19,7 +19,8 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
          pdo_mysql \
          redis \
          soap \
-         uuid
+         uuid \
+         xsl
 
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
 
