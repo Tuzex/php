@@ -83,12 +83,12 @@ jobs:
             ghcr.io/tuzex/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
           target: ${{ env.ENVIRONMENT }}
 
-  cli--dev-debug:
+  cli--dev-xdebug:
     runs-on: ubuntu-latest
     env:
       MODE: cli
-      ENVIRONMENT: dev-debug
-      FLAG: --dev-debug
+      ENVIRONMENT: dev-xdebug
+      FLAG: --dev-xdebug
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -220,12 +220,12 @@ jobs:
             ghcr.io/tuzex/php:${{ env.VERSION }}-${{ env.MODE }}${{ env.FLAG }}
           target: ${{ env.ENVIRONMENT }}
 
-  fpm--dev-debug:
+  fpm--dev-xdebug:
     runs-on: ubuntu-latest
     env:
       MODE: fpm
-      ENVIRONMENT: dev-debug
-      FLAG: --dev-debug
+      ENVIRONMENT: dev-xdebug
+      FLAG: --dev-xdebug
     steps:
       - name: Checkout
         uses: actions/checkout@v2
