@@ -5,9 +5,9 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
     && sync \
     && install-php-extensions \
          amqp \
-         csv \
+         apcu \
          intl \
-         ldap \
+         opcache \
          redis \
          xsl
 
