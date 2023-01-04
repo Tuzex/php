@@ -1,6 +1,5 @@
-FROM php:8.2.0-fpm-alpine3.17 as base
+FROM php:8.2.0-fpm as base
 
-RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/community/ gnu-libiconv=1.17-r0
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-extensions \
@@ -22,7 +21,6 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
          uuid \
          xsl
 
-ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
 
 FROM base as prod
 
