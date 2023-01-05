@@ -6,8 +6,13 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
     && install-php-extensions \
          amqp \
          apcu \
+         bcmath \
          intl \
+         mongodb \
          opcache \
+         pdo_pgsql \
+         pdo_mysql \
+         pdo_sqlite \
          redis \
          xsl
 
