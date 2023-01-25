@@ -9,7 +9,6 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
          bcmath \
          intl \
          mongodb \
-         opcache \
          pdo_pgsql \
          pdo_mysql \
          pdo_sqlite \
@@ -18,6 +17,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
 
 FROM base as prod
 
+RUN install-php-extensions opcache
 RUN mv "${PHP_INI_DIR}/php.ini-production" "${PHP_INI_DIR}/php.ini"
 
 COPY /conf.d/90-overrides.ini ${PHP_INI_DIR}/conf.d/90-overrides.ini
