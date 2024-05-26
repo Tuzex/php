@@ -13,6 +13,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
          pdo_mysql \
          pdo_sqlite \
          redis \
+         gd \
          xsl
 
 FROM base as prod
