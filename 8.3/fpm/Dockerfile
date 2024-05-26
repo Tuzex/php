@@ -1,4 +1,4 @@
-FROM php:8.3.0-fpm as base
+FROM php:8.3.7-fpm as base
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-extensions \
