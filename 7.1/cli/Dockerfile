@@ -1,4 +1,4 @@
-FROM php:7.1.33-cli-alpine3.9 as base
+FROM php:7.1.33-cli-stretch as base
 
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.9/community/ gnu-libiconv=1.16-r0
 
