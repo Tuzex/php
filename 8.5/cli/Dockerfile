@@ -8,6 +8,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions \
          apcu \
          bcmath \
          intl \
+         imagick \
          mongodb \
          pdo_pgsql \
          pdo_mysql \
